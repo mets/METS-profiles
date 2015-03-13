@@ -1207,33 +1207,33 @@
     </mets:digiprovMD> 
   </mets:amdSec>  
   <mets:fileSec> 
-    <mets:fileGrp ID="MC_IMGGRP" USE="Images"> 
-      <mets:file CHECKSUM="7864cc080ac52fb92a40446f372b9a03" CHECKSUMTYPE="MD5" CREATED="2014-07-11T21:08:23" ID="MC_0002" MIMETYPE="image/jp2" SEQ="1" SIZE="5049822" ADMID="OBJ_002 MIX_002"> 
+    <mets:fileGrp ID="MC_IMGGRP_2" USE="Images"> 
+      <mets:file CHECKSUM="7864cc080ac52fb92a40446f372b9a03" CHECKSUMTYPE="MD5" CREATED="2014-07-11T21:08:23" ID="MC_0002_2" MIMETYPE="image/jp2" SEQ="1" SIZE="5049822" ADMID="OBJ_002 MIX_002"> 
 		<mets:FLocat LOCTYPE="URL" xlink:href="masterCopy/MC_b50eb6b0-f0a4-11e3-b72e-005056827e52_0002.jp2"></mets:FLocat> 
       </mets:file> 
     </mets:fileGrp>  
-    <mets:fileGrp ID="UC_IMGGRP" USE="Images"> 
-      <mets:file CHECKSUM="c3dc5eb5dba099dbf1c8fb5765c5cc82" CHECKSUMTYPE="MD5" CREATED="2014-07-11T21:46:38" ID="UC_0002" MIMETYPE="image/jp2" SEQ="1" SIZE="1645539"> 
+    <mets:fileGrp ID="UC_IMGGRP_2" USE="Images"> 
+      <mets:file CHECKSUM="c3dc5eb5dba099dbf1c8fb5765c5cc82" CHECKSUMTYPE="MD5" CREATED="2014-07-11T21:46:38" ID="UC_0002_2" MIMETYPE="image/jp2" SEQ="1" SIZE="1645539"> 
         <mets:FLocat LOCTYPE="URL" xlink:href="userCopy/UC_b50eb6b0-f0a4-11e3-b72e-005056827e52_0002.jp2"></mets:FLocat> 
       </mets:file> 
     </mets:fileGrp>  
-    <mets:fileGrp ID="ALTOGRP" USE="Layout"> 
-      <mets:file CHECKSUM="6149cdb510139f436157ff448e80d677" CHECKSUMTYPE="MD5" CREATED="2014-07-19T05:17:59" ID="ALTO_0002" MIMETYPE="text/xml" SEQ="1" SIZE="1681" ADMID="OBJ_003"> 
+    <mets:fileGrp ID="ALTOGRP_2" USE="Layout"> 
+      <mets:file CHECKSUM="6149cdb510139f436157ff448e80d677" CHECKSUMTYPE="MD5" CREATED="2014-07-19T05:17:59" ID="ALTO_0002_2" MIMETYPE="text/xml" SEQ="1" SIZE="1681" ADMID="OBJ_003"> 
 		<mets:FLocat LOCTYPE="URL" xlink:href="ALTO/ALTO_b50eb6b0-f0a4-11e3-b72e-005056827e52_0002.xml"></mets:FLocat> 
       </mets:file> 
     </mets:fileGrp>  
-    <mets:fileGrp ID="TXTGRP" USE="Text"> 
-      <mets:file CHECKSUM="4968bfabed4113b39f269890c114d19e" CHECKSUMTYPE="MD5" CREATED="2014-07-19T05:16:25" ID="TXT_0002" MIMETYPE="text/plain" SEQ="1" SIZE="6"> 
+    <mets:fileGrp ID="TXTGRP_2" USE="Text"> 
+      <mets:file CHECKSUM="4968bfabed4113b39f269890c114d19e" CHECKSUMTYPE="MD5" CREATED="2014-07-19T05:16:25" ID="TXT_0002_2" MIMETYPE="text/plain" SEQ="1" SIZE="6"> 
         <mets:FLocat LOCTYPE="URL" xlink:href="TXT/TXT_b50eb6b0-f0a4-11e3-b72e-005056827e52_0002.txt"></mets:FLocat> 
       </mets:file> 
     </mets:fileGrp> 
   </mets:fileSec>  
   <mets:structMap TYPE="PHYSICAL">
     <mets:div TYPE="MONOGRAPH_PAGE">
-      <mets:fptr FILEID="MC_0002"/>
-      <mets:fptr FILEID="UC_0002"/>
-      <mets:fptr FILEID="ALTO_0002"/>
-      <mets:fptr FILEID="TXT_0002"/>
+      <mets:fptr FILEID="MC_0002_2"/>
+      <mets:fptr FILEID="UC_0002_2"/>
+      <mets:fptr FILEID="ALTO_0002_2"/>
+      <mets:fptr FILEID="TXT_0002_2"/>
     </mets:div>
   </mets:structMap>
 </mets:mets>
