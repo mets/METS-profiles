@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Creado por Julio Cordal Elviro -->
-<METS_Profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.loc.gov/METS_Profile/" xsi:schemaLocation="http://www.loc.gov/METS_Profile/ http://www.loc.gov/standards/mets/profile_docs/mets.profile.v1-2.xsd">
-	<URI LOCTYPE="URL">[[PENDIENTE DE ASIGNAR]]</URI>
+<METS_Profile 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:xlink="http://www.w3.org/1999/xlink" 
+	xmlns="http://www.loc.gov/METS_Profile/" 
+	xsi:schemaLocation="http://www.loc.gov/METS_Profile/ http://www.loc.gov/standards/mets/profile_docs/mets.profile.v1-2.xsd">
+	<URI LOCTYPE="URL">http://www.loc.gov/standards/mets/profiles/00000044.xml</URI>
 	<title>Perfil METS-BVPB para ingesta y preservación de recursos digitales</title>
 	<abstract>Este perfil está orientado a la creación de METS que sirvan para representar, preservar e ingestar los objetos digitales que se archivan y ofrecen al público en la Biblioteca Virtual de Patrimonio Bibligráfico del Ministerio de Educación, Cultura y Deporte. Puede ser utilizado para ingestar objetos digitales y/o metadatos en bases de datos, y en general para registrar, trasmitir y almacenar metadatos y objetos digitales.</abstract>
 	<date>2015-02-27T11:30:00</date>
