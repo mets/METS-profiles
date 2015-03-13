@@ -1,7 +1,8 @@
-﻿<METS_profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/METS_Profile/v2" xsi:schemaLocation="http://www.loc.gov/METS_Profile/ http://www.loc.gov/standards/mets/profile_docs/mets.profile.v1-2.xsd">
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<METS_Profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.loc.gov/METS_Profile/v2" xsi:schemaLocation="http://www.loc.gov/METS_Profile/v2 http://www.loc.gov/standards/mets/profile_docs/mets.profile.v2-0.xsd" STATUS="final" REGISTRATION="registered">
 <URI ASSIGNEDBY="local" LOCTYPE="URL">http://www.nkp.cz/o-knihovne/zakladni-informace/zakladni-dokumenty/vizitky/digi-ochrana3</URI>
 <title>NDK Monograph Object</title>
-<abstract>METS_profile for monograph is used for determination of rules of description for digitized documents (these are transferred to validation and archiving in the Long Term Preservation System). These records are supplied by external institutions with intention to store in the repository of National Digital Library of the Czech Republic.</abstract>
+<abstract>METS_Profile for monograph is used for determination of rules of description for digitized documents (these are transferred to validation and archiving in the Long Term Preservation System). These records are supplied by external institutions with intention to store in the repository of National Digital Library of the Czech Republic.</abstract>
 <date>2014-01-13T11:53:12</date>
 <contact>
 	<name>Iveta Lodrová</name>
@@ -10,345 +11,362 @@
 	<email>iveta.lodrova@nkp.cz</email>
 </contact>
 <related_profile>NONE</related_profile>
-<extension_schema>
+<profile_context>
+	<resource_model><p xmlns="http://www.w3.org/1999/xhtml">This profile is intended for SIP OAIS as determination of rules of description for digitized documents for external institutions with intention to store in the repository of National Digital Library of the Czech Republic.</p></resource_model>
+</profile_context>
+<external_schema>
 	<name>MODS</name>
-	<URI>http://www.loc.gov/standards/mods/v3/mods-3-5.xsd</URI>
+	<URL>http://www.loc.gov/standards/mods/v3/mods-3-5.xsd</URL>
 	<context>mets/dmdSec/mdWrap/xmlData</context>
-	<note>Used for descriptive metadata representing the intellectual object.</note>
-</extension_schema>
-<extension_schema>
+	<note><p xmlns="http://www.w3.org/1999/xhtml">Used for descriptive metadata representing the intellectual object.</p></note>
+</external_schema>
+<external_schema>
 	<name>UNQUALIFIED/SIMPLE DUBLIN CORE</name>
-	<URI>http://dublincore.org/schemas/xmls/qdc/dc.xsd</URI>
+	<URL>http://dublincore.org/schemas/xmls/qdc/dc.xsd</URL>
 	<context>mets/dmdSec/mdWrap/xmlData</context>
-	<note>Used for descriptive metadata representing the intellectual object.</note>
-</extension_schema>
-<extension_schema>
+	<note><p xmlns="http://www.w3.org/1999/xhtml">Used for descriptive metadata representing the intellectual object.</p></note>
+</external_schema>
+<external_schema>
 	<name>PREMIS: PREMIS:OBJECT, PREMIS:AGENT, PREMIS:EVENT</name>
-	<URI>http://www.loc.gov/standards/premis/v2/premis-v2-2.xsd</URI>
+	<URL>http://www.loc.gov/standards/premis/v2/premis-v2-2.xsd</URL>
 	<context>mets/amdSec/techMD/mdWrap/xmlData</context>
 	<context>mets/amdSec/digiprovMD/mdWrap/xmlData</context>
-	<note>Used for technical metadata about content files.</note>
-</extension_schema>
-<extension_schema>
+	<note><p xmlns="http://www.w3.org/1999/xhtml">Used for administrative and technical metadata about content files.</p></note>
+</external_schema>
+<external_schema>
 	<name>MIX</name>
-	<URI>http://www.loc.gov/standards/mix/mix20/mix20.xsd</URI>
+	<URL>http://www.loc.gov/standards/mix/mix20/mix20.xsd</URL>
 	<context>mets/amdSec/techMD/mdWrap/xmlData</context>
-	<note>Used for technical metadata about digital still images.</note>
-</extension_schema>
-<extension_schema>
+	<note><p xmlns="http://www.w3.org/1999/xhtml">Used for technical metadata about digital still images.</p></note>
+</external_schema>
+<external_schema>
 	<name>CopyrightMD</name>
-	<URI>http://www.cdlib.org/groups/rmg/docs/copyrightMD.xsd</URI>
+	<URL>http://www.cdlib.org/groups/rmg/docs/copyrightMD.xsd</URL>
 	<context>mets/amdSec/rightsMD/mdWrap/xmlData</context>
-	<note>Used for recording intellectual property rights.</note>
-</extension_schema>
+	<note><p xmlns="http://www.w3.org/1999/xhtml">Used for recording intellectual property rights.</p></note>
+</external_schema>
 <description_rules>
-	<p>All applications of MODS in NDK METS records adhere to the MODS User Guidelines published by the Library of Congress's Network Development and MARC Standards Office.</p>
+	<p xmlns="http://www.w3.org/1999/xhtml">All applications of MODS in NDK METS records adhere to the MODS User Guidelines published by the Library of Congress's Network Development and MARC Standards Office.</p>
 </description_rules>
 <controlled_vocabularies>
 	<vocabulary>
 		<name>MARC Code List for Relators</name>
-		<maintance_agency>Library of Congress, Network Development and MARC Standard Office</maintance_agency>
+		<maintenance_agency>Library of Congress, Network Development and MARC Standard Office</maintenance_agency>
 		<URI>http://www.loc.gov/marc/relators/relaterm.html</URI>
 		<context>mets/dmdSec/mdWrap/xmlData/mods</context>
-		<description>This controlled vocabulary is used for codes of role in MODS element named <roleTerm>, as specification  of person’s or organization’s role stated in element <name>.</description>
+		<description><p xmlns="http://www.w3.org/1999/xhtml">This controlled vocabulary is used for codes of role in MODS element named &lt;roleTerm&lt;, as specification  of person’s or organization’s role stated in element &lt;name&gt;.</p></description>
 	</vocabulary>
 	<vocabulary>
 		<name>Codes for the Representation of Names of Languages</name>
-		<maintance_agency>ISO 639 Joint Advisory Committee</maintance_agency>
+		<maintenance_agency>ISO 639 Joint Advisory Committee</maintenance_agency>
 		<URI>http://www.loc.gov/standards/iso639-2/php/code_list.php</URI>
 		<context>mets/dmdSec/mdWrap/xmlData/mods</context>
-		<description>This controlled vocabulary is used for exact expression of languages by codes. Codes give information about language of document.</description>
+		<description><p xmlns="http://www.w3.org/1999/xhtml">This controlled vocabulary is used for exact expression of languages by codes. Codes give information about language of document.</p></description>
 	</vocabulary>
 	<vocabulary>
-		<name>ADR: Libraries & Information Centers in the Czech Republic</name>
-		<maintance_agency>Union Catalogue of the Czech Republic</maintance_agency>
-		<URI>http://aleph.nkp.cz/F/?func=file&file_name=find-b&local_base=adr</URI>
+		<name>ADR: Libraries &amp; Information Centres in the Czech Republic</name>
+		<maintenance_agency>Union Catalogue of the Czech Republic</maintenance_agency>
+		<URI>http://aleph.nkp.cz/F/?func=file&amp;file_name=find-b&amp;local_base=adr</URI>
 		<context>mets/dmdSec/mdWrap/xmlData/mods</context>
-		<description>This controlled vocabulary is used for expression of institution where is physically stored a described document.</description>
+		<description><p xmlns="http://www.w3.org/1999/xhtml">This controlled vocabulary is used for expression of institution where is physically stored a described document.</p></description>
 	</vocabulary>
 	<vocabulary>
 		<name>ISO 3166-1</name>
-		<maintance_agency>International Organization for Standardization</maintance_agency>
+		<maintenance_agency>International Organization for Standardization</maintenance_agency>
 		<URI>https://www.iso.org/obp/ui/#search</URI>
 		<context>mets/amdSec/rightsMD/mdWrap</context>
-		<description>It is used for standardized codes for states in external schema "CopyrightMD", for elements <country.publication> and <country.creation>.</description>
+		<description><p xmlns="http://www.w3.org/1999/xhtml">It is used for standardized codes for states in external schema CopyrightMD, for elements &lt;country.publication&gt; and &lt;country.creation&gt;.</p></description>
 	</vocabulary>
 </controlled_vocabularies>
 <structural_requirements>
 	<metsRootElement>
 		<requirement ID="metsRoot1">
-			<p>The root "mets" element must include a LABEL attribute value.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The root METS element must include a LABEL attribute value.</p></description>
 		</requirement>
 		<requirement ID="metsRoot2">
-			<p>The root "mets" element must include a TYPE attribute value.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The root METS element must include a TYPE attribute value.</p></description>
 		</requirement>
 	</metsRootElement>
 	<metsHdr>
 		<requirement ID="metsHdr1">
-			<p>A METS record conforming to this profile must contain a "metsHdr" element.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">A METS record conforming to this profile must contain a &lt;metsHdr&gt; element.</p></description>
 		</requirement>
 		<requirement ID="metsHdr2">
-			<p>The "metsHdr" element must contain the LASTMODDATE attribute and CREATEDATE attribute.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The &lt;metsHdr&gt; element must contain the LASTMODDATE attribute and CREATEDATE attribute.</p></description>
 		</requirement>
 		<requirement ID="metsHdr3">
-			<p>The "metsHdr" element must contain an "agent" with the ROLE attribute value "CREATOR" and a TYPE attribute value "ORGANIZATION".</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The &lt;metsHdr&gt; element must contain an agent with the ROLE attribute value CREATOR and a TYPE attribute value ORGANIZATION.</p></description>
 		</requirement>
 		<requirement ID="metsHdr4">
-			<p>The <agent> element must contain the "name" element with the value name of person or institution: a creator of record.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The &lt;agent&gt; element must contain the &lt;name&gt; element with the value name of person or institution: a creator of record.</p></description>
 		</requirement>
 		<requirement ID="metsHdr5">
-			<p>The "metsHdr" element must contain an "agent" with the ROLE attribute value "ARCHIVIST" and a TYPE attribute value "ORGANIZATION".</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The &lt;metsHdr&gt; element must contain an &lt;agent&gt; with the ROLE attribute value ARCHIVIST and a TYPE attribute value ORGANIZATION.</p></description>
 		</requirement>
 		<requirement ID="metsHdr6">
-			<p>The <agent> element must contain the "name" element with the value name of institution: an owner of record.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The &lt;agent&gt; element must contain the &lt;name&gt; element with the value name of institution: an owner of record.</p></description>
 		</requirement>
 	</metsHdr>
 	<dmdSec>
 		<requirement ID="dmdSec1">
-			<p>A METS record conforming to this profile must contain one or more "dmdSec" containing a "mdWrap" with "xmlData". The required dmdSec/mdWrap/xmlData must contain elements from the Metadata Object Description Schema (MODS) and elements from unqualified Dublin Core. Additional "dmdSec" elements are permitted. For each additional metadata schema a separate "dmdSec" must be used, and must contain "mdWrap" with "xmlData". When adding elements from metadata schema Dublin Core (unqualified/simple DC: only reduced record and there must be used official Element set mapping MODS to Dublin Core), this should conform to standardized guidelines for the schema.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">A METS record conforming to this profile must contain one or more dmdSec containing a mdWrap with xmlData. The required dmdSec/mdWrap/xmlData must contain elements from the Metadata Object Description Schema (MODS) and elements from unqualified Dublin Core. Additional &lt;dmdSec&gt; elements are permitted. For each additional metadata schema a separate "dmdSec" must be used, and must contain mdWrap with xmlData. When adding elements from metadata schema Dublin Core (unqualified/simple DC: only reduced record and there must be used official Element set mapping MODS to Dublin Core), this should conform to standardized guidelines for the schema.</p></description>
 		</requirement>
 		<requirement ID="dmdSec2">
-			<p>A METS record conforming to this profile must contain the "dmdSec" element with ID attribute value of identification of a part of METS record (for both of the schemas: for MODS and for Dublin Core too, see Appendix N°1).</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">A METS record conforming to this profile must contain the &lt;dmdSec&gt; element with ID attribute value of identification of a part of METS record (for both of the schemas: for MODS and for Dublin Core too, see Appendix N°1).</p></description>
 		</requirement>
 		<requirement ID="dmdSec3">
-			<p>A METS record conforming to this profile must contain the "mdWrap" element with MDTYPE attribute value for identification records in MODS and records in Dublin Core and MIMETYPE attribute value "text/xml" for both of the schemas.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">A METS record conforming to this profile must contain the &lt;mdWrap&gt; element with MDTYPE attribute value for identification records in MODS and records in Dublin Core and MIMETYPE attribute value text/xml for both of the schemas.</p></description>
 		</requirement>
 		<requirement ID="dmdSec4"> 
-			<p>A conforming METS record must contain a /mods/titleInfo/title/subTitle/PartNumber/partName element. Elements <subtitle>, <partNumber> and <partName> are mandatory only if available.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">A conforming METS record must contain a /mods/titleInfo/title/subTitle/PartNumber/partName element. Elements &lt;subtitle&gt;, &lt;partNumber&gt; and &lt;partName&gt; are mandatory only if available.</p></description>
 		</requirement>
 		<requirement ID="dmdSec5">
-			<p>A conforming METS record must contain a /mods/name/namePart element if available.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">A conforming METS record must contain a /mods/name/namePart element if available.</p></description>
 		</requirement>
 		<requirement ID="dmdSec6">
-			<p>A conforming METS record must contain a /mods/role/roleTerm element.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">A conforming METS record must contain a /mods/role/roleTerm element.</p></description>
 		</requirement>
 		<requirement ID="dmdSec7">
-			<p>A conforming METS record must contain a /mods/genre element.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">A conforming METS record must contain a /mods/genre element.</p></description>
 		</requirement>
 		<requirement ID="dmdSec8">
-			<p>A conforming METS record must contain a /mods/originInfo/place/placeTerm/publisher/dateIssued/issuance element. Elements <place> <placeTerm> <publisher> are mandatory only if available.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">A conforming METS record must contain a /mods/originInfo/place/placeTerm/publisher/dateIssued/issuance element. Elements &lt;place&gt;, &lt;placeTerm&gt;, &lt;publisher&gt; are mandatory only if available.</p></description>
 		</requirement>
 		<requirement ID="dmdSec9">
-			<p>A conforming METS record must contain a /mods/language/languageTerm element.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">A conforming METS record must contain a /mods/language/languageTerm element.</p></description>
 		</requirement>
 		<requirement ID="dmdSec10">
-			<p>A conforming METS record must contain a /mods/physicalDescription/location/physicalLocation/form element.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">A conforming METS record must contain a /mods/physicalDescription/location/physicalLocation/form element.</p></description>
 		</requirement>
 		<requirement ID="dmdSec11">
-			<p> A conforming METS record must contain a /mods/identifier element with TYPE attribute value "uuid" and "urnnbn". These two values are mandatory. Next values are mandatory if available: isbn, ccnb.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml"> A conforming METS record must contain a /mods/identifier element with TYPE attribute value uuid and urnnbn. These two values are mandatory. Next values are mandatory if available: isbn, ccnb.</p></description>
 		</requirement>
 		<requirement ID="dmdSec12">
-			<p>A conforming METS record must contain a /mods/location/shelfLocator element.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">A conforming METS record must contain a /mods/location/shelfLocator element.</p></description>
 		</requirement>
 		<requirement ID="dmdSec13">
-			<p>A conforming METS record must contain a /mods/recordInfo/recordCreationDate/recordChangeDate element. Element <recordChangeDate> is mandatory only if available.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">A conforming METS record must contain a /mods/recordInfo/recordCreationDate/recordChangeDate element. Element &lt;recordChangeDate&gt; is mandatory only if available.</p></description>
 		</requirement>
 	</dmdSec>
 	<amdSec>
 		<requirement ID="amdSec1">
-			<p>A METS record conforming to this profile must have an "amdSec" section or more precisely separated files with "amdSec" section for each digitized page. The "amdSec" section must contain at least one techMD/mdWrap/xmlData section and one digiprovMD/mdWrap/xmlData section.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">A METS record conforming to this profile must have an amdSec section or more precisely separated files with amdSec section for each digitized page. The amdSec section must contain at least one techMD/mdWrap/xmlData section and one digiprovMD/mdWrap/xmlData section.</p></description>
 		</requirement>
 		<requirement ID="amdSec2">
-			<p>The "amdSec" element must contain attribute ID value number of concrete page (e.g. "PAGE_0001"), which is describing in concrete "side METS" file.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The &lt;amdSec&gt; element must contain attribute ID value number of concrete page (e.g. "PAGE_0001"), which is describing in concrete "side METS" file.</p></description>
+		</requirement>	
 		<requirement ID="techMD1">
-			<p>The required "techMD" must contain attribute ID value containing PREMIS Object number and other "techMD" attribute ID value containing MIX number (see Appendix N°1).</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The required &lt;techMD&gt; must contain attribute ID value containing PREMIS Object number and other &lt;techMD&gt; attribute ID value containing MIX number (see Appendix N°1).</p></description>
 		</requirement>
 		<requirement ID="techMD2">
-			<p>The required "techMD" must contain elements from the PREMIS schema. For PREMIS Object must contain element <object> with attribute "xsi=type" value "file".</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The required &lt;techMD&gt; must contain elements from the PREMIS schema. For PREMIS Object must contain element &lt;object&gt; with attribute "xsi=type" value "file".</p></description>
 		</requirement>
 		<requirement ID="techMD3">
-			<p>The required "techMD" must contain elements from the PREMIS schema. For PREMIS Object must contain element objectIdentifier/objectIdentifierType/objectIdentifierValue.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The required &lt;techMD&gt; must contain elements from the PREMIS schema. For PREMIS Object must contain element objectIdentifier/objectIdentifierType/objectIdentifierValue.</p></description>
 		</requirement>
 		<requirement ID="techMD4">
-			<p>The required "techMD" must contain elements from the PREMIS schema. For PREMIS Object must contain element preservationLevel/preservationLevelValue/preservationLevelDateAssigned.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The required &lt;techMD&gt; must contain elements from the PREMIS schema. For PREMIS Object must contain element preservationLevel/preservationLevelValue/preservationLevelDateAssigned.</p></description>
 		</requirement>
 		<requirement ID="techMD5">
-			<p>The required "techMD" must contain elements from the PREMIS schema. For PREMIS Object must contain element objectCharacteristics/compositionLevel/fixity/messageDigestAlgorithm/messageDigest/messageDigestOriginator/size/format/formatDesignation/formatName/formatName/formatVersion/formatVersion/formatRegistry/formatRegistryName/formatRegistryKey/creatingApplication/creatingApplicationName/creatingApplicationVersion/dateCreatedByApplication.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The required &lt;techMD&gt; must contain elements from the PREMIS schema. For PREMIS Object must contain element objectCharacteristics/compositionLevel/fixity/messageDigestAlgorithm/messageDigest/messageDigestOriginator/size/format/formatDesignation/formatName/formatName/formatVersion/formatVersion/formatRegistry/formatRegistryName/formatRegistryKey/creatingApplication/creatingApplicationName/creatingApplicationVersion/dateCreatedByApplication.</p></description>
 		</requirement>
 		<requirement ID="techMD6">
-			<p>The required "techMD" must contain elements from the PREMIS scheme. For PREMIS Object must contain element <originalName>.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The required &lt;techMD&gt; must contain elements from the PREMIS scheme. For PREMIS Object must contain element &lt;originalName&gt;.</p></description>
 		</requirement>
 		<requirement ID="techMD7">
-			<p>The required "techMD" must contain elements from the PREMIS scheme. Each PREMIS Object must be linked to PREMIS Event through element <relatedEventIdentification>. So, PREMIS Object must contain element relationship/relationshipType/relationshipSubType/relatedObjectIdentification/relatedObjectIdentifierType/relatedObjectIdentifierValue/relatedEventIdentification/relatedEventIdentifierType/relatedEventIdentifierValue/linkingEventIdentifier/linkingEventIdentifierType/linkingEventIdentifierValue.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The required &lt;techMD&gt; must contain elements from the PREMIS scheme. Each PREMIS Object must be linked to PREMIS Event through &lt;relatedEventIdentification&gt;. So, PREMIS Object must contain element relationship/relationshipType/relationshipSubType/relatedObjectIdentification/relatedObjectIdentifierType/relatedObjectIdentifierValue/relatedEventIdentification/relatedEventIdentifierType/relatedEventIdentifierValue/linkingEventIdentifier/linkingEventIdentifierType/linkingEventIdentifierValue.</p></description>
 		</requirement>
 		<requirement ID="techMD8">
-			<p>The required "techMD" must contain elements from MIX scheme, intended only for image data. Some elements are mandatory for master copies and original scanned images, some only for master copies and some only for original scanned images (mostly TIFF).</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The required &lt;techMD&gt; must contain elements from MIX scheme, intended only for image data. Some elements are mandatory for master copies and original scanned images, some only for master copies and some only for original scanned images (mostly TIFF).</p></description>
 		</requirement>
 		<requirement ID="techMD9">
-			<p>The required "techMD" must contain elements from MIX scheme, intended only for image data. Some elements are mandatory for master copies and original scanned image, some only for master copies and some only for original scanned image. For master copies and original scanned images it should contain element BasicDigitalObjectInformation/ObjectIdentifier/objectIdentifierType/objectIdentifierValue/fileSize.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The required &lt;techMD&gt; must contain elements from MIX scheme, intended only for image data. Some elements are mandatory for master copies and original scanned image, some only for master copies and some only for original scanned image. For master copies and original scanned images it should contain element BasicDigitalObjectInformation/ObjectIdentifier/objectIdentifierType/objectIdentifierValue/fileSize.</p></description>
 		</requirement>
 		<requirement ID="techMD10">
-			<p>The required "techMD" must contain elements from MIX scheme, intended only for image data. Some elements are mandatory for master copies and original scanned image, some only for master copies and some only for original scanned images. For master copies and original scanned images it must contain element byteOrder/Compression/compressionScheme/BasicImageInformation/BasicImageCharacteristics/imageWidth/imageHeight/PhotoMetricInterpretation/colorSpace/ColorProfile/IccProfile/iccProfileName/iccProfileVersion. It is recommended to include an element <iccProfileURL> too.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The required &lt;techMD&gt; must contain elements from MIX scheme, intended only for image data. Some elements are mandatory for master copies and original scanned image, some only for master copies and some only for original scanned images. For master copies and original scanned images it must contain element byteOrder/Compression/compressionScheme/BasicImageInformation/BasicImageCharacteristics/imageWidth/imageHeight/PhotoMetricInterpretation/colorSpace/ColorProfile/IccProfile/iccProfileName/iccProfileVersion. It is recommended to include an element &lt;iccProfileURL&gt; too.</p></description>
 		</requirement>
 		<requirement ID="techMD11">
-			<p>The required "techMD" must contain elements from MIX scheme, intended only for image data. Some elements are mandatory for master copies and original scanned image, some only for master copies and some only for original scanned images. For master copies it must contain element (mandatory only if available) SpecialFormatCharacteristics/JPEG2000/CodecCompliance/codec/codecVersion/codecstreamProfile/complianceClass/EncodingOptions/Tiles/tileWidth/tileHeight/qualityLayers/resolutionLevels.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The required &lt;techMD&gt; must contain elements from MIX scheme, intended only for image data. Some elements are mandatory for master copies and original scanned image, some only for master copies and some only for original scanned images. For master copies it must contain element (mandatory only if available) SpecialFormatCharacteristics/JPEG2000/CodecCompliance/codec/codecVersion/codecstreamProfile/complianceClass/EncodingOptions/Tiles/tileWidth/tileHeight/qualityLayers/resolutionLevels.</p></description>
 		</requirement>
 		<requirement ID="techMD12">
-			<p>The required "techMD" must contain elements from MIX scheme, intended only for image data. Some elements are mandatory for master copies and original scanned image, some only for master copies and some only for original scanned images. For original scanned images it must contain element <ImageCaptureMetadata>.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The required &lt;techMD&gt; must contain elements from MIX scheme, intended only for image data. Some elements are mandatory for master copies and original scanned image, some only for master copies and some only for original scanned images. For original scanned images it must contain element &lt;ImageCaptureMetadata&gt;.</p></description>
 		</requirement>
 		<requirement ID="techMD13">
-			<p>The required "techMD" must contain elements from MIX scheme, intended only for image data. Some elements are mandatory for master copies and original scanned image, some only for master copies and some only for original scanned image. For original scanned images it should contain element SourceInformation/sourceType/SourceID/sourceIDType/sourceIDValue.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The required &lt;techMD&gt; must contain elements from MIX scheme, intended only for image data. Some elements are mandatory for master copies and original scanned image, some only for master copies and some only for original scanned image. For original scanned images it should contain element SourceInformation/sourceType/SourceID/sourceIDType/sourceIDValue.</p></description>
 		</requirement>
 		<requirement ID="techMD14">
-			<p>The required "techMD" must contain elements from MIX scheme, intended only for image data. Some elements are mandatory for master copies and original scanned image, some only for master copies and some only for original scanned images. For original scanned images it must contain element GeneralCaptureInformation/dateTimeCreated/imageProducer/captureDevice/ScannerCapture/scannerManufacturer/scannerModel/scannerModelName/scannerModelNumber/scannerModelSerialNo/MaximumOpticalResolution/xOpticalResolution/opticalResolutionUnit/scannerSensor/ScanningSystemSoftware/scanningSoftwareName/scanningSoftwareVersionNo.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The required &lt;techMD&gt; must contain elements from MIX scheme, intended only for image data. Some elements are mandatory for master copies and original scanned image, some only for master copies and some only for original scanned images. For original scanned images it must contain element GeneralCaptureInformation/dateTimeCreated/imageProducer/captureDevice/ScannerCapture/scannerManufacturer/scannerModel/scannerModelName/scannerModelNumber/scannerModelSerialNo/MaximumOpticalResolution/xOpticalResolution/opticalResolutionUnit/scannerSensor/ScanningSystemSoftware/scanningSoftwareName/scanningSoftwareVersionNo.</p></description>
 		</requirement>
 		<requirement ID="techMD15">
-			<p>The required "techMD" must contain elements from MIX scheme, intended only for image data. Some elements are mandatory for master copies and original scanned image, some only for master copies and some only for original scanned images. For original scanned images it must contain element (mandatory only if available) DigitalCameraCapture/digitalCameraManufacturer/DigitalCameraModel/digitalCameraModelName/digitalCameraModelNumber/digitalCameraModelSerialNo/cameraSensor/CameraCaptureSettings/ImageData/orientation.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The required &lt;techMD&gt; must contain elements from MIX scheme, intended only for image data. Some elements are mandatory for master copies and original scanned image, some only for master copies and some only for original scanned images. For original scanned images it must contain element (mandatory only if available) DigitalCameraCapture/digitalCameraManufacturer/DigitalCameraModel/digitalCameraModelName/digitalCameraModelNumber/digitalCameraModelSerialNo/cameraSensor/CameraCaptureSettings/ImageData/orientation.</p></description>
 		</requirement>
 		<requirement ID="techMD16">
-			<p>The required "techMD" must contain elements from MIX scheme, intended only for image data. Some elements are mandatory for master copies and original scanned images, some only for master copies and some only for original scanned images. For master copies and original scanned images it must contain element ImageAssessmentMetadata/SpatialMetrics/samplingFrequencyPlane/samplingFrequencyUnit/xSamplingFrequency/numerator/denominator/ySamplingFrequency/numerator/denominator. An element <samplingFrequencyPlane> is recommended, not mandatory. Elements <xSamplingFrequency> and <ySamplingFrequency> are mandatory if available.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The required &lt;techMD&gt; must contain elements from MIX scheme, intended only for image data. Some elements are mandatory for master copies and original scanned images, some only for master copies and some only for original scanned images. For master copies and original scanned images it must contain element ImageAssessmentMetadata/SpatialMetrics/samplingFrequencyPlane/samplingFrequencyUnit/xSamplingFrequency/numerator/denominator/ySamplingFrequency/numerator/denominator. An element &lt;samplingFrequencyPlane&gt; is recommended, not mandatory. Elements &lt;xSamplingFrequency&gt; and &lt;ySamplingFrequency&gt; are mandatory if available.</p></description>
 		</requirement>
 		<requirement ID="techMD17">
-			<p>The required "techMD" must contain elements from MIX scheme, intended only for image data. Some elements are mandatory for master copies and original scanned image, some only for master copies and some only for original scanned images. For master copies and original scanned images it must contain element ImageColorEncoding/bitsPerSample/bitsPerSampleValue/bitsPerSampleUnit/samplesPerPixel. An element <bitsPerSampleUnit> is not mandatory, only recommended.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The required &lt;techMD&gt; must contain elements from MIX scheme, intended only for image data. Some elements are mandatory for master copies and original scanned image, some only for master copies and some only for original scanned images. For master copies and original scanned images it must contain element ImageColorEncoding/bitsPerSample/bitsPerSampleValue/bitsPerSampleUnit/samplesPerPixel. An element &lt;bitsPerSampleUnit&gt; is not mandatory, only recommended.</p></description>
 		</requirement>
 		<requirement ID="techMD18">
-			<p>The required "techMD" must contain elements from MIX scheme, intended only for image data. Some elements are mandatory for master copies and original scanned image, some only for master copies and some only for original scanned images. For master copies it must contain (mandatory only if available) element TargetData/targetType/targetID/targetManufacturer/targetName/targetNo/targetMedia/externalTarget/performaceData. Elements <targetMedia> and <performanceData> are only recommended, not mandatory. An element <externalTarget> is mandatory if available.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The required &lt;techMD&gt; must contain elements from MIX scheme, intended only for image data. Some elements are mandatory for master copies and original scanned image, some only for master copies and some only for original scanned images. For master copies it must contain (mandatory only if available) element TargetData/targetType/targetID/targetManufacturer/targetName/targetNo/targetMedia/externalTarget/performaceData. Elements &lt;targetMedia&gt; and &lt;performanceData&gt; are only recommended, not mandatory. An element &lt;externalTarget&gt; is mandatory if available.</p></description>
 		</requirement>
 		<requirement ID="techMD19">
-			<p>The required "techMD" must contain elements from MIX scheme, intended only for image data. Some elements are mandatory for master copies and original scanned image, some only for master copies and some only for original scanned images. For master copies it must contain element ChangeHistory/ImageProcessing/dateTimeProcessed/sourceData/processingAgency. An element <ProcessingAgency> is only recommended, not mandatory.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The required &lt;techMD&gt; must contain elements from MIX scheme, intended only for image data. Some elements are mandatory for master copies and original scanned image, some only for master copies and some only for original scanned images. For master copies it must contain element ChangeHistory/ImageProcessing/dateTimeProcessed/sourceData/processingAgency. An element &lt;ProcessingAgency&gt; is only recommended, not mandatory.</p></description>
 		</requirement>
 		<requirement ID="digiprovMD1">
-			<p>The required "digiprovMD" must contain elements PREMIS Event and each record of PREMIS Event must be linked to PREMIS Agent (i.e. originator of an activity/event). It must contain element eventIdentifier/eventIdentifierType/eventIdentifierValue.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The required &lt;digiprovMD&gt; must contain elements PREMIS Event and each record of PREMIS Event must be linked to PREMIS Agent (i.e. originator of an activity/event). It must contain element eventIdentifier/eventIdentifierType/eventIdentifierValue.</p></description>
 		</requirement>
 		<requirement ID="digiprovMD2">
-			<p>The required "digiprovMD" must contain elements PREMIS Event and each record of PREMIS Event must be linked to PREMIS Agent (i.e. originator of an activity). It must contain element <eventType>.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The required &lt;digiprovMD&gt; must contain elements PREMIS Event and each record of PREMIS Event must be linked to PREMIS Agent (i.e. originator of an activity). It must contain element &lt;eventType&gt;.</p></description>
 		</requirement>
 		<requirement ID="digiprovMD3">
-			<p>The required "digiprovMD" must contain elements PREMIS Event and each record of PREMIS Event must be linked to PREMIS Agent (i.e. originator of an activity). It must contain element <eventDateTime>.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The required &lt;digiprovMD&gt; must contain elements PREMIS Event and each record of PREMIS Event must be linked to PREMIS Agent (i.e. originator of an activity). It must contain element &lt;eventDateTime&gt;.</p></description>
 		</requirement>
 		<requirement ID="digiprovMD4">
-			<p>The required "digiprovMD" must contain elements PREMIS Event and each record of PREMIS Event must be linked to PREMIS Agent (i.e. originator of an activity). It must contain element <eventDetail>.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The required &lt;digiprovMD&gt; must contain elements PREMIS Event and each record of PREMIS Event must be linked to PREMIS Agent (i.e. originator of an activity). It must contain element &lt;eventDetail&gt;.</p></description>
 		</requirement>
 		<requirement ID="digiprovMD5">
-			<p>The required "digiprovMD" must contain elements PREMIS Event and each record of PREMIS Event must be linked to PREMIS Agent (i.e. originator of an activity). It must contain element eventOutcomeInformation/eventOutcome.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The required &lt;digiprovMD&gt; must contain elements PREMIS Event and each record of PREMIS Event must be linked to PREMIS Agent (i.e. originator of an activity). It must contain element eventOutcomeInformation/eventOutcome.</p></description>
 		</requirement>
 		<requirement ID="digiprovMD6">
-			<p>The required "digiprovMD" must contain elements PREMIS Event and each record of PREMIS Event must be linked to PREMIS Agent (i.e. originator of an activity). It must contain element linkingAgentIdentifier/linkingAgentIdentifierType/linkingAgentIdentifierValue/linkingAgentRole.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The required &lt;digiprovMD&gt; must contain elements PREMIS Event and each record of PREMIS Event must be linked to PREMIS Agent (i.e. originator of an activity). It must contain element linkingAgentIdentifier/linkingAgentIdentifierType/linkingAgentIdentifierValue/linkingAgentRole.</p></description>
 		</requirement>
 		<requirement ID="digiprovMD7">
-			<p>The required "digiprovMD" must contain elements PREMIS Event and each record of PREMIS Event must be linked to PREMIS Agent (i.e. originator of an activity). It must contain element linkingObjectIdentifier/linkingObjectIdentifierType/linkingObjectIdentifierValue.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The required &lt;digiprovMD&gt; must contain elements PREMIS Event and each record of PREMIS Event must be linked to PREMIS Agent (i.e. originator of an activity). It must contain element linkingObjectIdentifier/linkingObjectIdentifierType/linkingObjectIdentifierValue.</p></description>
 		</requirement>
 		<requirement ID="digiprovMD8">
-			<p>The required "digiprovMD" must contain elements PREMIS Agent. It must contain element agentIdentifier/agentIdentifierType/agentIdentifierValue.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The required &lt;digiprovMD&gt; must contain elements PREMIS Agent. It must contain element agentIdentifier/agentIdentifierType/agentIdentifierValue.</p></description>
 		</requirement>
 		<requirement ID="digiprovMD9">
-			<p>The required "digiprovMD" must contain elements PREMIS Agent. It is recommended to include an element <agentName>.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The required &lt;digiprovMD&gt; must contain elements PREMIS Agent. It is recommended to include an element &lt;agentName&gt;.</p></description>
 		</requirement>
 		<requirement ID="digiprovMD10">
-			<p>The required "digiprovMD" must contain elements PREMIS Agent. It must contain element <agentType>.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The required &lt;digiprovMD&gt; must contain elements PREMIS Agent. It must contain element &lt;agentType&gt;.</p></description>
 		</requirement>
 		<requirement ID="digiprovMD11">
-			<p>The required "digiprovMD" must contain elements PREMIS Agent. It must contain (only if available) element <agentNote>.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The required &lt;digiprovMD&gt; must contain elements PREMIS Agent. It must contain (only if available) element &lt;agentNote&gt;.</p></description>
 		</requirement>
 		<requirement ID="rightsMD1">
-			<p>Copyright metadata scheme is completely optional. If someone decides to use a copyright metadata, elements are obliged from scheme "CopyrightMD".</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">Copyright metadata scheme is completely optional. If someone decides to use a copyright metadata, elements are obliged from scheme "CopyrightMD".</p></description>
 		</requirement>
 		<requirement ID="rightsMD2">
-			<p>If someone decides to use a copyright metadata (scheme "CopyrightMD"), in a conforming METS record (amdSec/rightsMD/mdWrap/xmlData) must be the "rightsMD" element with ID attribute (value e.g. "RIGHTS_001").</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">If someone decides to use a copyright metadata (scheme "CopyrightMD"), in a conforming METS record (amdSec/rightsMD/mdWrap/xmlData) must be the &lt;rightsMD&gt; element with ID attribute (value e.g. "RIGHTS_001").</p></description>
 		</requirement>
 		<requirement ID="rightsMD3">
-			<p>If someone decides to use a copyright metadata (scheme "CopyrightMD"), in a conforming METS record (amdSec/rightsMD/mdWrap/xmlData) must be the "mdWrap" element with MDTYPE attribute value "OTHER" and MIMETYPE attribute value "text/xml".</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">If someone decides to use a copyright metadata (scheme "CopyrightMD"), in a conforming METS record (amdSec/rightsMD/mdWrap/xmlData) must be the &lt;mdWrap&gt; element with MDTYPE attribute value "OTHER" and MIMETYPE attribute value "text/xml".</p></description>
 		</requirement>
 		<requirement ID="rightsMD4">
-			<p>If someone decides to use a copyright metadata (scheme "CopyrightMD"), in a conforming METS record (amdSec/rightsMD/mdWrap/xmlData) must be included a <copyrightMD:copyright> element with the COPYRIGHT.STATUS and PUBLICATION.STATUS attributes with appropriate values. Others elements are optional (so may be included): creation/year.creation/country.creation; rights.holder/contact/name/note/notice/general.note; these elements are mandatory if available (so should be included): creator/creator.corporate/creator.person/name/year.birth/year.death/publication/country.publication/publisher/year.publication.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">If someone decides to use a copyright metadata (scheme "CopyrightMD"), in a conforming METS record (amdSec/rightsMD/mdWrap/xmlData) must be included a copyrightMD:copyright element with the &lt;COPYRIGHT.STATUS&gt; and &lt;PUBLICATION.STATUS&gt; attributes with appropriate values. Others elements are optional (so may be included): creation/year.creation/country.creation; rights.holder/contact/name/note/notice/general.note; these elements are mandatory if available (so should be included): creator/creator.corporate/creator.person/name/year.birth/year.death/publication/country.publication/publisher/year.publication.</p></description>
 		</requirement>
 	</amdSec>
 	<fileSec>
 		<requirement ID="fileSec1a">
-			<p>The "fileSec" (for "main METS" i.e. for a document) for a compliant METS record must contain one, or more, <fileGrp> elements. It refers about all files for pages of the document (i.e. master copies, user copies etc.) and links all pages to image files. Each <fileGrp> must contain ID attribute value type of image file (e.g. "MC_IMGGRP" for master copy, "UC_IMGGRP" for user copy etc.) and USE attribute value "Images".</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The &lt;fileSec&gt; (for "main METS" i.e. for a document) for a compliant METS record must contain one, or more, &lt;fileGrp&gt; elements. It refers about all files for pages of the document (i.e. master copies, user copies etc.) and links all pages to image files. Each &lt;fileGrp&gt; must contain ID attribute value type of image file (e.g. "MC_IMGGRP" for master copy, "UC_IMGGRP" for user copy etc.) and USE attribute value "Images".</p></description>
 		</requirement>
 		<requirement ID="fileSec2a">
-			<p>Each <fileGrp> element must contain one, and only one, element <file> with ID, MIMETYPE, SIZE, CHECKSUMTYPE, CHECKSUM, SEQ and CREATED attribute representing the intended use of the referenced file.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">Each &lt;fileGrp&gt; element must contain one, and only one, element &lt;file&gt; with ID, MIMETYPE, SIZE, CHECKSUMTYPE, CHECKSUM, SEQ and CREATED attribute representing the intended use of the referenced file.</p></description>
 		</requirement>
 		<requirement ID="fileSec3a">
-			<p>Each <fileGrp> must include an subelement <Flocat> with LOCTYPE and xlink:href attribute representing a link to image file.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">Each &lt;fileGrp&gt; element must include an subelement &lt;Flocat&gt; with LOCTYPE and xlink:href attribute representing a link to image file.</p></description>
 		</requirement>
 		<requirement ID="fileSec1b"> 
-			<p>The "fileSec" (for a "side METS" i.e. for one page of a document) for a compliant METS record must contain one, or more, <fileGrp> elements. It refers about all files for one page (i.e. one master copy, one user copy etc.) and links this one page to image files. Each <fileGrp> must contain ID attribute value type of image file (e.g. "MC_IMGGRP" for master copy, "UC_IMGGRP" for user copy etc.) and USE attribute value "Images".</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The &lt;fileSec&gt; (for a "side METS" i.e. for one page of a document) for a compliant METS record must contain one, or more, &lt;fileGrp&gt; elements. It refers about all files for one page (i.e. one master copy, one user copy etc.) and links this one page to image files. Each &lt;fileGrp&gt; must contain ID attribute value type of image file (e.g. "MC_IMGGRP" for master copy, "UC_IMGGRP" for user copy etc.) and USE attribute value "Images".</p></description>
 		</requirement>
 		<requirement ID="fileSec2b">
-			<p>Each <fileGrp> element must contain one, and only one element <file> with ID, MIMETYPE, SIZE, CHECKSUMTYPE, CHECKSUM, SEQ and CREATED attribute representing the intended use of the referenced file.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">Each &lt;fileGrp&gt; element must contain one, and only one element &lt;file&gt; with ID, MIMETYPE, SIZE, CHECKSUMTYPE, CHECKSUM, SEQ and CREATED attribute representing the intended use of the referenced file.</p></description>
 		</requirement>
 		<requirement ID="fileSec3b">
-			<p>Each <fileGrp> must include an subelement <Flocat> with LOCTYPE and xlink:href attribute representing a link to image file.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">Each &lt;fileGrp&gt; must include an subelement &lt;Flocat&gt; with LOCTYPE and xlink:href attribute representing a link to image file.</p></description>
 		</requirement>
 		<requirement ID="fileSec4b">
-			<p>Each <file> for representation of master copy and ALTO with own record PREMIS Object or MIX must include ADMID attribute value ID <techMD> records of representation of this page.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">Each file for representation of master copy and ALTO with own record PREMIS Object or MIX must include ADMID attribute value ID techMD records of representation of this page.</p></description>
 		</requirement>
 	</fileSec>
 	<structMap>
 		<requirement ID="structMap1a">
-			<p>A conforming METS record (for "main METS" i.e. for the whole of document) must contain only two "structMap" elements: one element "structMap" with LABEL attribute value "Physical_Structure" and TYPE attribute value "PHYSICAL" (hierarchical information about document, e.g. a book divided into sequences of pages); the second element "structMap" with LABEL attribute value "Logical_Structure" and TYPE attribute "LOGICAL" (gives a description of structure of document, e.g. a book divided into chapters).</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">A conforming METS record (for "main METS" i.e. for the whole of document) must contain only two &lt;structMap&gt; elements: one element &lt;structMap&gt; with LABEL attribute value "Physical_Structure" and TYPE attribute value "PHYSICAL" (hierarchical information about document, e.g. a book divided into sequences of pages); the second element &lt;structMap&gt; with LABEL attribute value "Logical_Structure" and TYPE attribute "LOGICAL" (gives a description of structure of document, e.g. a book divided into chapters).</p></description>
 		</requirement>
 		<requirement ID="structMap2a">
-			<p>An element "structMap" with LABEL attribute value "Physical_Structure" must include the parental <div> element with LABEL, TYPE, ID and DMDID attribute. Also must include the daughter <div> element (include in parental <div> element, intended for individual pages) with TYPE, ID, ORDERLABEL and ORDER attribute.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">An element &lt;structMap&gt; with LABEL attribute value "Physical_Structure" must include the parental &lt;div&gt; element with LABEL, TYPE, ID and DMDID attribute. Also must include the daughter &lt;div&gt; element (include in parental &lt;div&gt; element, intended for individual pages) with TYPE, ID, ORDERLABEL and ORDER attribute.</p></description>
 		</requirement>
 		<requirement ID="structMap3a">
-			<p>The daughter <div> element must contain one or more <fptr> elements, each of which references an individual <file> element representing a type of the files for the entire document.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The daughter &lt;div&gt; element must contain one or more &lt;fptr&gt; elements, each of which references an individual &lt;file&gt; with ID, MIMETYPE, SIZE, CHECKSUMTYPE, CHECKSUM, SEQ and CREATED attribute representing the intended use of the referenced file element representing a type of the files for the entire document.</p></description>
 		</requirement>
 		<requirement ID="structMap4a">
-			<p>The <fptr> element must use the FILEID attribute value ID of file master copy, user copy, ALTO.xml, OCR.txt and AMD_METS.xml (i.e. point directly to a <file> element of fileSec).</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The &lt;fptr&gt; element must use the FILEID attribute value ID of file master copy, user copy, ALTO.xml, OCR.txt and AMD_METS.xml (i.e. point directly to a &lt;file&gt; element of fileSec).</p></description>
 		</requirement>
 		<requirement ID="structMap5a">
-			<p>The <mptr> element is not supported in this profile.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The &lt;mptr&gt; element is not supported in this profile.</p></description>
 		</requirement>
 		<requirement ID="structMap6a">
-			<p>An element "structMap" with LABEL attribute value "Logical_Structure" and TYPE attribute "LOGICAL" must contain <div> element with DMDID, ID and TYPE attribute.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">An element &lt;structMap&gt; with LABEL attribute value "Logical_Structure" and TYPE attribute "LOGICAL" must contain &lt;div&gt; element with DMDID, ID and TYPE attribute.</p></description>
 		</requirement>
 		<requirement ID="structMap1b">
-			<p>A conforming METS record (for "side METS" i.e. for one page of a document) must contain only one "structMap" element with TYPE attribute value "PHYSICAL".</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">A conforming METS record (for "side METS" i.e. for one page of a document) must contain only one &lt;structMap&gt; element with TYPE attribute value "PHYSICAL".</p></description>
 		</requirement>
 		<requirement ID="structMap2b">
-			<p>An element "structMap" must contain a <div> subelement with TYPE attribute value "MONOGRAPH_PAGE".</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">An element &lt;structMap&gt; must contain a &lt;div&gt; subelement with TYPE attribute value MONOGRAPH_PAGE.</p></description>
 		</requirement>
 		<requirement ID="structMap3b">
-			<p>The <div> element must contain one or more <fptr> elements, each of which references an individual <file> element representing a type of the files for one concrete page.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The &lt;div&gt; element must contain one or more &lt;fptr&gt; elements, each of which references an individual &lt;file&gt; element representing a type of the files for one concrete page.</p></description>
 		</requirement>
 		<requirement ID="structMap4b">
-			<p>The <fptr> element must use the FILEID attribute value ID of file master copy, user copy, ALTO.xml, OCR.txt for one concrete page of a document (i.e. point directly to a <file> element of fileSec).</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The &lt;fptr&gt; element must use the FILEID attribute value ID of file master copy, user copy, ALTO.xml, OCR.txt for one concrete page of a document (i.e. point directly to a &lt;file&gt; element of fileSec).</p></description>
 		</requirement>
 		<requirement ID="structMap5b">
-			<p>The <mptr> element is not supported in this profile.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The &lt;mptr&gt; element is not supported in this profile.</p></description>
 		</requirement>
 	</structMap>
 	<structLink>
 		<requirement ID="structLink1a">
-			<p>An element "structLink" (only for "main METS" i.e. for a document) contains listing of individual pages based on adding links between logical and physical structure map. An element "structLink" must contain subelement <smLink> with XLINK:FROM attribute value ID <div> from logical structure map and XLINK:TO attribute value ID <div> of page from physical structure map.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">An element &lt;structLink&gt; (only for "main METS" i.e. for a document) contains listing of individual pages based on adding links between logical and physical structure map. An element &lt;structLink&gt; must contain subelement &lt;smLink&gt; with XLINK:FROM attribute value ID &lt;div&gt; from logical structure map and XLINK:TO attribute value ID &lt;div&gt; of page from physical structure map.</p></description>
 		</requirement>
 		<requirement ID="structLink1b">
-			<p>An element "structLink" is not supported in a "side METS".</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">An element &lt;structLink&gt; is not supported in a "side METS".</p></description>
 		</requirement>
 	</structLink>
 	<behaviorSec>
 		<requirement ID="behaviorSec1">
-			<p>This profile stipulates no requirements for the "behaviorSec" element.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">This profile stipulates no requirements for the &lt;behaviorSec&gt; element.</p></description>
 		</requirement>
 	</behaviorSec>
 </structural_requirements>
 <technical_requirements>
 	<content_files>
 		<requirement>
-			<p>The profile prescribes formats for the files: for the file with master copies (images in JPEG2000 lossless); user copies (images in JPEG 2000 lossy); ALTO (files ALTO.xml for each page); TXT (files OCR.txt for each page).</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The profile prescribes formats for the files: for the file with master copies (images in JPEG2000 lossless); user copies (images in JPEG 2000 lossy); ALTO (files ALTO.xml for each page); TXT (files OCR.txt for each page).</p></description>
 		</requirement>
 	</content_files>
 	<behavior_files>
 		<requirement>
-			<p>The profile does not prescribe association to any behaviors.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">The profile does not prescribe association to any behaviors.</p></description>
 		</requirement>
 	</behavior_files>
 	<metadata_files>
 		<requirement>
-			<p>This profile does not prescribe referencing of external metadata records.</p>
+			<description><p xmlns="http://www.w3.org/1999/xhtml">This profile does not prescribe referencing of external metadata records.</p></description>
 		</requirement>
 	</metadata_files>
 </technical_requirements>
 <tool>
-	<description>
-		<p>It is recommended to use tools for technical metadata, such as JHOVE2 (provides functions to perform format specific identification, validation, and characterization of digital objects;http://jhove.sourceforge.net/index.html), PRONOM (provides technical information about structure of file formats which encode information into a form which can be only processed and rendered comprehensible by very specific combinations of hardware and software; http://www.nationalarchives.gov.uk/aboutapps/PRONOM/default.htm). For creating image data in format JPEG2000 is using KAKADU SOFTWARE, which is comprehensive software toolkit for JPEG2000 developers (http://kakadusoftware.com/software/).</p>
-	</description>
+	<name>JHOVE2</name>
+	<agency>Library of Congress</agency>
+	<URI>https://bitbucket.org/jhove2/main/wiki/Home</URI>
+	<URI>http://www.digitalpreservation.gov/partners/jhove2.html</URI>
+	<description><p xmlns="http://www.w3.org/1999/xhtml">It is recommended to use tool for technical metadata - JHOVE2. The JHOVE2 project generalizes the concept of format characterization to include identification, validation, feature extraction, and policy-based assessment.</p></description>
 </tool>
-<Appendix NUMBER="1">
-<?xml version="1.0" encoding="UTF-8"?>
+<tool>
+	<name>PRONOM</name>
+	<agency>The National Archives</agency>
+	<URI>http://apps.nationalarchives.gov.uk/PRONOM/Default.aspx</URI>
+	<description><p xmlns="http://www.w3.org/1999/xhtml">The technical registry PRONOM provides technical information about structure of file formats which encode information into a form which can be only processed and rendered comprehensible by very specific combinations of hardware and software.</p></description>
+</tool>
+<tool>
+	<name>KAKADU SOFTWARE</name>
+	<agency>NewSouth Innovations</agency>
+	<URI>http://kakadusoftware.com/software/</URI>
+	<description><p xmlns="http://www.w3.org/1999/xhtml">For creating image data in format JPEG2000 is using KAKADU SOFTWARE, which is comprehensive software toolkit for JPEG2000 developers.</p></description>
+</tool>
+<Appendix NUMBER="1" LABEL="main METS">
 <mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:premis="info:lc/xmlns/premis-v2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" LABEL="Karpatská Rus a hranice našeho státu, 1919" TYPE="Monograph" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance http://www.w3.org/2001/XMLSchema.xsd http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">  
   <mets:metsHdr CREATEDATE="2014-06-10T15:39:56" LASTMODDATE="2014-07-21T20:27:28"> 
     <mets:agent ROLE="CREATOR" TYPE="ORGANIZATION"> 
@@ -653,7 +671,8 @@
     <mets:smLink xlink:from="VOLUME_0001" xlink:to="DIV_P_PAGE_0007"/> 
   </mets:structLink> 
 </mets:mets>
-<?xml version="1.0" encoding="UTF-8"?>
+</Appendix>
+<Appendix NUMBER="2" LABEL="side METS">
 <mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:mix="http://www.loc.gov/mix/v20" xmlns:premis="info:lc/xmlns/premis-v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xlink="http://www.w3.org/1999/xlink" LABEL="Karpatská Rus a hranice našeho státu, 1919" TYPE="Monograph" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance http://www.w3.org/2001/XMLSchema.xsd http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd http://www.loc.gov/mix/v20 http://www.loc.gov/standards/mix/mix20/mix20.xsd info:lc/xmlns/premis-v2 http://www.loc.gov/standards/premis/premis.xsd">  
   <mets:metsHdr CREATEDATE="2014-07-11T00:49:39.341+02:00" LASTMODDATE="2014-07-11T00:49:39.341+02:00"> 
     <mets:agent ROLE="CREATOR" TYPE="ORGANIZATION"> 
@@ -1219,26 +1238,4 @@
   </mets:structMap>
 </mets:mets>
 </Appendix>
-</METS_profile>
-
-
-
-
-
-
-
-
-
-
-
-	
-
-
-
-
-
-
-
-
-
-
+</METS_Profile>
