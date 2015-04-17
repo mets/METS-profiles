@@ -3,7 +3,8 @@
     xmlns="http://www.loc.gov/METS_Profile/v2"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
-    xsi:schemaLocation="http://www.loc.gov/METS_Profile/v2 http://www.loc.gov/standards/mets/profile_docs/mets.profile.v2-0.xsd" STATUS="final" REGISTRATION="unregistered">
+    xsi:schemaLocation="http://www.loc.gov/METS_Profile/v2 http://www.loc.gov/standards/mets/profile_docs/mets.profile.v2-0.xsd" STATUS="final" REGISTRATION="registered">
+    <URI LOCTYPE="URL" ASSIGNEDBY="metsboard">http://www.loc.gov/standards/mets/profiles/00000045.xml</URI>
     <URI LOCTYPE="URL" ASSIGNEDBY="local">http://digital2.library.unt.edu/mets/untl.xml</URI>
     <title>UNTL METS Archival Information Package Profile</title>
     <abstract>This profile describes the rules and requirements for using METS as an Archival Information Package (AIP) for general digital objects at the University of North Texas. Digital objects may contain files, groupings into fileSets and further organization into manifestations. This METS profile is used by the University of North Texas for all Archival Information Packages accessioned by the UNT Libraries' Digital Collections.</abstract>
