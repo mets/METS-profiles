@@ -8,7 +8,7 @@
 	xmlns:xlink="http://www.w3.org/1999/xlink" 
 	xmlns:xhtml="http://www.w3.org/1999/xhtml" 
 	xsi:schemaLocation="http://www.loc.gov/METS_Profile/v2 http://www.loc.gov/standards/mets/profile_docs/mets.profile.v2-0.xsd">
-	<URI ASSIGNEDBY="local" LOCTYPE="URL">http://intradesa.mcu.es/bvpb/i18n/doc/VirtualLibraryOfBibliographicalHeritage_metsProfile.xml</URI>
+	<URI ASSIGNEDBY="local" LOCTYPE="URL">http://bvpb.mcu.es/i18n/doc/VirtualLibraryOfBibliographicalHeritage_metsProfile.xml</URI>
 	<URI ASSIGNEDBY="metsboard" LOCTYPE="URL">http://www.loc.gov/standards/mets/profiles/00000044.xml</URI>
 	<title xml:lang="es">Perfil METS-BVPB para ingesta y preservación de recursos digitales</title>
 	<title xml:lang="en">Digital Resources Ingest and Preservation BVPB-METS profile</title>
