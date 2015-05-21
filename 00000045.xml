@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<METS_Profile 
+<METS_Profile STATUS="final" REGISTRATION="registered"
     xmlns="http://www.loc.gov/METS_Profile/v2"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
-    xsi:schemaLocation="http://www.loc.gov/METS_Profile/v2 http://www.loc.gov/standards/mets/profile_docs/mets.profile.v2-0.xsd" STATUS="final" REGISTRATION="registered">
-    <URI LOCTYPE="URL" ASSIGNEDBY="metsboard">http://www.loc.gov/standards/mets/profiles/00000045.xml</URI>
+    xsi:schemaLocation="
+    http://www.loc.gov/METS_Profile/v2 http://www.loc.gov/standards/mets/profile_docs/mets.profile.v2-0.xsd
+    http://www.loc.gov/METS/ http://www.loc.gov./standards/mets/mets.xsd
+    ">
     <URI LOCTYPE="URL" ASSIGNEDBY="local">http://digital2.library.unt.edu/mets/untl.xml</URI>
+    <URI LOCTYPE="URL" ASSIGNEDBY="metsboard">http://www.loc.gov/standards/mets/profiles/00000045.xml</URI>
     <title>UNTL METS Archival Information Package Profile</title>
-    <abstract>This profile describes the rules and requirements for using METS as an Archival Information Package (AIP) for general digital objects at the University of North Texas. Digital objects may contain files, groupings into fileSets and further organization into manifestations. This METS profile is used by the University of North Texas for all Archival Information Packages accessioned by the UNT Libraries' Digital Collections.</abstract>
+    <abstract>This profile describes the rules and requirements for using METS as an Archival Information Package (AIP) for general digital objects at the University of North Texas. 
+        Digital objects may contain files, groupings into fileSets and further organization into manifestations. 
+        This METS profile is used by the University of North Texas for all Archival Information Packages accessioned by the UNT Libraries' Digital Collections. 
+
+        All MUST, MUST NOT, SHOULD, SHOULD NOT and MAY terms are used according to the meaning defined in RFC 2119 (http://www.ietf.org/rfc/rfc2119.txt)</abstract>
     <date>2015-03-05T11:08:00</date>
     <contact>
         <name>Mark Phillips</name>
@@ -58,112 +66,115 @@
     </controlled_vocabularies>
     <structural_requirements>
         <metsRootElement>
-            <requirement ID="metsRoot1">
+            <requirement ID="metsRoot1" REQLEVEL="MUST">
                 <description> <xhtml:p>The root METS element must include an OBJID attribute with an ARK identifier assigned to the digital object.</xhtml:p></description>
             </requirement>
-            <requirement ID="metsRoot2">
+            <requirement ID="metsRoot2" REQLEVEL="MUST">
                 <description> <xhtml:p>The root METS element must include a TYPE attribute with a value of "archival information package".</xhtml:p></description>
             </requirement>
         </metsRootElement>
         <metsHdr>
-            <requirement ID="metsHdr1">
+            <requirement ID="metsHdr1" REQLEVEL="MUST">
                 <description><xhtml:p>The metsHdr element must contain the CREATEDATE and LASTMODDATE attributes.</xhtml:p></description>
             </requirement>
-            <requirement ID="metsHdr2">
+            <requirement ID="metsHdr2" REQLEVEL="MUST">
                 <description><xhtml:p>The metsHdr element must contain an agent element with the ROLE attribute value "CREATOR", TYPE attribute value "ORGANIZATION", and name element with value "UNT Libraries: Digital Projects Unit".</xhtml:p></description>
             </requirement>
         </metsHdr>
         
-        <dmdSec ID="dmdSec1">
-            <requirement>
+        <dmdSec>
+            <requirement ID="dmdSec1" REQLEVEL="MUST">
                 <description><xhtml:p>Conforming METS documents must contain one dmdSec element. The dmdSec must contain a single mdRef element.</xhtml:p></description>
             </requirement>
-            <requirement ID="dmdSec2">
+            <requirement ID="dmdSec2" REQLEVEL="MUST">
                 <description><xhtml:p>The mdRef element must identify to an external metadata record that conforms to the UNTL Descriptive Metadata schema. The identifier of the UNTL compliant metadata must be recorded in the xlink:href attribute of the mdRef element.</xhtml:p></description>
             </requirement>
-            <requirement ID="dmdSec3">
+            <requirement ID="dmdSec3" REQLEVEL="MUST">
                 <description><xhtml:p>The mdRef element must have the MDTYPE attribute value of "OTHER".</xhtml:p></description>
             </requirement>
-            <requirement ID="dmdSec4">
+            <requirement ID="dmdSec4" REQLEVEL="MUST">
                 <description><xhtml:p>The mdRef element must have the OTHERMDTYPE attribute value of "UNTL".</xhtml:p></description>
             </requirement>
-            <requirement ID="dmdSec5">
+            <requirement ID="dmdSec5" REQLEVEL="MUST">
                 <description><xhtml:p>The mdRef element must have the LOCTYPE attribute value of "ARK".</xhtml:p></description>
             </requirement>
         </dmdSec>
-        <amdSec ID="amdSec1">
-            <requirement>
+        <amdSec>
+            <requirement ID="amdSec1" REQLEVEL="MUST">
                 <description><xhtml:p>Conforming METS documents must contain only one amdSec element.</xhtml:p></description>
             </requirement>
-            <requirement ID="techMD1">
+            <requirement ID="amdSec2" REQLEVEL="MUST">
                 <description><xhtml:p>Conforming METS documents must contain one or more techMD elements. Each techMD element must contain either an mdWrap or mdRef element.</xhtml:p></description>
             </requirement>
-            <requirement ID="techMD2">
+            <requirement ID="amdSec3" REQLEVEL="MUST">
                 <description><xhtml:p>Each techMD element must contain an ID attribute.</xhtml:p></description>
             </requirement>
-            <requirement ID="techMD3">
-                <description><xhtml:p>Conforming METS documents must contain one mdRef element per METS file element that points to an external document that conforms to the JHOVE schema. The location of this document must be recorded in the xlink:href attribute. This element will have an MDTYPE attribute value of "OTHER", an OTHERMDTYPE value of "JHOVE", and a LOCTYPE value of "URL".</xhtml:p></description>
+            <requirement ID="amdSec4" REQLEVEL="MUST">
+                <description><xhtml:p>Conforming METS documents must contain one mdRef element per METS file element that points to an external document that conforms to the JHOVE schema. The location of this document must be recorded in the xlink:href attribute. This element must have an MDTYPE attribute value of "OTHER", an OTHERMDTYPE value of "JHOVE", and a LOCTYPE value of "URL".</xhtml:p></description>
             </requirement>
-            <requirement ID="techMD4">
+            <requirement ID="amdSec5" REQLEVEL="MUST">
                 <description><xhtml:p>Conforming METS documents must contain one mdRef element per METS file element that encapsulates a PREMIS Object record using the PREMIS v1.0 Schema. This is included in an mdWrap with MDTYPE attribute of PREMIS and the PREMIS record is included within an xmlData element.</xhtml:p></description>
             </requirement>
-            <requirement ID="techMD5">
+            <requirement ID="amdSec6" REQLEVEL="MUST">
                 <description><xhtml:p>Conforming METS documents must contain one mdRef element per METS file element that encapsulates the output of the UNIX file command. This is included in an mdWrap with MDTYPE attribute of "OTHER" and a OTHERMDTYPE attribute of "unix_file". The output of the file command is encapsulated in a locally defined XML document included within an xmlData element.</xhtml:p></description>
             </requirement>
         </amdSec>
         <fileSec>
-            <requirement ID="fileSec1">
-                <description><xhtml:p>Conforming METS documents must contain one fileSec element. The fileSec element will have an ID attribute assigned.</xhtml:p></description>
+            <requirement ID="fileSec1" REQLEVEL="MUST">
+                <description><xhtml:p>Conforming METS documents must contain one fileSec element. The fileSec element must have an ID attribute assigned.</xhtml:p></description>
             </requirement>
-            <requirement ID="fileSec2">
+            <requirement ID="fileSec2" REQLEVEL="MUST">
                 <description><xhtml:p>Conforming METS documents for this profile must contain one or more fileGrp elements. The fileGrp container acts as an organizing unit for files that form a UNTL specific concept of a "fileSet". These fileSets group files that relate to a logical unit of an object such as a page, track, clip, or image. Each fileGrp must contain an ID attribute.</xhtml:p></description>
             </requirement>
-            <requirement ID="fileSec3" RELATEDMAT="vocab1">
+            <requirement ID="fileSec3" REQLEVEL="MUST" RELATEDMAT="vocab1">
                 <description><xhtml:p>Each file represented in the fileSec must have an associated USE attribute. The file USE attribute values must be drawn from the controlled vocabulary for file USE Attribute Values referenced within this profile.</xhtml:p></description>
             </requirement>
-            <requirement ID="fileSec4">
+            <requirement ID="fileSec4" REQLEVEL="MUST">
                 <description><xhtml:p>Each file element must contain an FLocat element which specifies the external location of the content file in an xlink:href attribute. The FLocat element must contain an xlink:href attribute, as well as a LOCTYPE attribute indicating the type of href being provided. The LOCTYPE for each file is "URL". The xlink:href attribute value is a URL with the "file://" protocol.</xhtml:p></description>
             </requirement>
-            <requirement ID="fileSec5">
+            <requirement ID="fileSec5" REQLEVEL="MUST">
                 <description><xhtml:p>Each file element must contain each of the following attributes in addition to the USE attribute mentioned above: MIMETYPE, CHECKSUMTYPE, CREATED, CHECKSUM, OWNERID, ADMID, ID, and SIZE.</xhtml:p></description>
             </requirement>
-            <requirement ID="fileSec6">
-                <description><xhtml:p>The CHECKSUMTYPE attribute value is "MD5".</xhtml:p></description>
+            <requirement ID="fileSec6" REQLEVEL="MUST">
+                <description><xhtml:p>The CHECKSUMTYPE attribute must have a value of "MD5".</xhtml:p></description>
             </requirement>
-            <requirement ID="fileSec7">
-                <description><xhtml:p>The OWNERID attribute value is an UUID using the urn:uuid:7b85fdd7-a15f-4bed-bc77-a51ea3beebae notation.</xhtml:p></description>
+            <requirement ID="fileSec7" REQLEVEL="MUST">
+                <description><xhtml:p>The OWNERID attribute value must be an UUID using the urn:uuid:7b85fdd7-a15f-4bed-bc77-a51ea3beebae notation.</xhtml:p></description>
             </requirement>
-             <requirement ID="fileSec8">
-                <description><xhtml:p>The ADMID attribute value is a set of identifiers that reference techMD elements in the adSec of the METS document. There are three ADMID identifiers separated by spaces.</xhtml:p></description>
+             <requirement ID="fileSec8" REQLEVEL="MUST">
+                <description><xhtml:p>The ADMID attribute value must be set of identifiers that reference techMD elements in the adSec of the METS document. There are three ADMID identifiers separated by spaces.</xhtml:p></description>
             </requirement> 
         </fileSec>
         <structMap>
-            <requirement ID="structMap1">
+            <requirement ID="structMap1" REQLEVEL="MUST">
                 <description><xhtml:p>A conforming METS document must contain one and only one structMap.</xhtml:p></description>
             </requirement>
-            <requirement ID="structMap2">
+            <requirement ID="structMap2" REQLEVEL="MUST">
                 <description><xhtml:p>A conforming structMap must contain an ID attribute.</xhtml:p></description>
             </requirement>
-            <requirement ID="structMap3" RELATEDMAT="vocab2">
+            <requirement ID="structMap3" REQLEVEL="MUST" RELATEDMAT="vocab2">
                 <description><xhtml:p>The structMap will be organized by three nested div elements. Each lowest level div element has a TYPE attribute with the value of "fileSet", and contains one or more fptr elements, whose FILEID attribute points to the fileGrp of the referenced item in the fileSec. The next level div contains a TYPE attribute with a value from "manifestation". The top level div contains a TYPE attribute with a value of "object", and a DMDID attribute that points to the descriptive metadata for the digital object to the METS structMap.</xhtml:p></description>
             </requirement>
-            <requirement ID="structMap4">
+            <requirement ID="structMap4" REQLEVEL="MUST">
                 <description><xhtml:p>The mptr element is not supported, instead a fptr element must directly point to a file element via its FILEID attribute. METS documents implementing this profile must not use the area, par, or seq elements.</xhtml:p></description>
             </requirement>
-            <requirement ID="structMap5">
+            <requirement ID="structMap5" REQLEVEL="MUST NOT">
+                <description><xhtml:p>METS documents implementing this profile must not use the area, par, or seq elements.</xhtml:p></description>
+            </requirement>
+            <requirement ID="structMap6" REQLEVEL="SHOULD">
                 <description><xhtml:p>The second and third level div elements should contain an ORDER attribute with an integer representing the order of that div within the whole document.</xhtml:p></description>
             </requirement>
-            <requirement ID="structMap6">
+            <requirement ID="structMap7" REQLEVEL="MAY">
                 <description><xhtml:p>The third level div element may have an optional ORDERLABEL attribute which is used to record any pagination information related to a given fileSet.</xhtml:p></description>
             </requirement>
-            <requirement ID="structMap7">
+            <requirement ID="structMap8" REQLEVEL="MAY">
                 <description><xhtml:p>The third level div element may have an optional LABEL attribute which is used to record additional non-pagination information related to a given fileSet. An example usage is the title of a track in an audio recording or the title of a clip in a multi-clip video object.</xhtml:p></description>
             </requirement>
         </structMap>
     </structural_requirements>
     <technical_requirements>
         <content_files>
-            <requirement>
+            <requirement ID="techReq1" REQLEVEL="SHOULD">
                 <description><xhtml:p>It is recommended that digitized files described with METS documents conforming to this profile meet the minimum specifications of the UNT Libraries: available at http://www.library.unt.edu/digital-projects-unit/standards and that born-digital resources whenever possible come from a list of preferred formats available at http://www.library.unt.edu/digital-projects-unit/preferred-formats/.
                 </xhtml:p></description>
             </requirement>
@@ -180,7 +191,7 @@
         <description><xhtml:p>The UNT Libraries' ACPMaker software is capable of using a METS document and associated digital content to produce an Access Content Package for the UNT Libraries' content access system called Aubrey.</xhtml:p></description>
     </tool>
     <Appendix NUMBER="1" LABEL="Example METS File for a two page letter available on The Portal to Texas History.">
-        <mets xmlns="http://www.loc.gov/METS/" xmlns:premis="http://www.loc.gov/standards/premis"  xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov./standards/mets/mets.xsd http://www.loc.gov/standards/premis http://www.loc.gov/standards/premis/PREMIS-v1-0.xsd" TYPE="archival information package" OBJID="ark:/67531/metapth591432" PROFILE="UNT_AIP_1.0">
+        <mets xmlns="http://www.loc.gov/METS/" xmlns:premis="http://www.loc.gov/standards/premis" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov./standards/mets/mets.xsd http://www.loc.gov/standards/premis http://www.loc.gov/standards/premis/PREMIS-v1-0.xsd" TYPE="archival information package" OBJID="ark:/67531/metapth591432" PROFILE="UNT_AIP_1.0">
           <metsHdr CREATEDATE="2015-03-02T23:03:07Z" LASTMODDATE="2015-03-02T23:03:07Z" ID="hdr_00001">
             <agent TYPE="ORGANIZATION" ROLE="CREATOR">
               <name>UNT Libraries: Digital Projects Unit</name>
