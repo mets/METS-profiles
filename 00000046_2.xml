@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <METS_Profile REGISTRATION="unregistered" STATUS="provisional" xmlns="http://www.loc.gov/METS_Profile/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://www.loc.gov/METS_Profile/v2 http://www.loc.gov/standards/mets/profile_docs/mets.profile.v2-0.xsd">
-	<URI LOCTYPE="URL" ASSIGNEDBY="metsboard">URL por definir apuntando a la LoC: http://www.loc.gov/standards/mets/profiles/xxxxx.xml</URI>
+	<URI LOCTYPE="URL" ASSIGNEDBY="metsboard">http://www.loc.gov/standards/mets/profiles/00000046.xml</URI>
 	<title xml:lang="es">Perfil METS del Archivo Electrónico del Patrimonio de Galicia</title>
 	<title xml:lang="en">Electronic Archive of Galician Heritage METS Profile</title>
 	<abstract xml:lang="es">Este perfil describe los requisitos que debe seguir un fichero METS para su integración en el Sistema de Descripciones Archivísticas y en el Sistema de Preservación, ambos sistemas componentes del Archivo Electrónico del Patrimonio de Galicia. Ha sido elaborado por la Subdirección Xeral de Arquivos de la Secretaría Xeral de Cultura.</abstract>
@@ -43,6 +43,7 @@
 			<xhtml:p xml:lang="es">Este perfil establece que los metadatos de preservación se codifican siguiendo el esquema PREMIS y el PREMIS Data Dictionary versión 3.0.</xhtml:p>
 			<xhtml:p xml:lang="en">This profile establishes preservation metadata are mandatorily coded using the PREMIS schema and the PREMIS Data Dictionary version 3.0.</xhtml:p>
 		</note>
+	</external_schema>
 	<external_schema ID="MIX">
 		<name>NISO Metadata for Images in XML (NISO MIX)</name>
 		<URL>http://www.loc.gov/standards/mix/</URL>
