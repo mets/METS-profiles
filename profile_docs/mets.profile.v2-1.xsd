@@ -29,6 +29,7 @@ http://creativecommons.org/publicdomain/zero/1.0/legalcode.
 	have been met.  Additional enhancements over the version 1 profile schema are described in the
 	schema documentation.
 	
+	Version 2.1 (April 2018) added the Creative Commons CC0 1.0 license.  This version also added the xml:lang 
 	attribute to more elements to make it easier to create multi-lingual profiles.  These elements were affected:
 	
 	* The external_schema/name element is now repeatable and allows the xml:lang attribute
