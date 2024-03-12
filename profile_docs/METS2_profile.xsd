@@ -729,20 +729,20 @@ The requirement element has two children: description and tests. The required de
 	</xsd:complexType>
 	
 	<xsd:group name="xhtmlelements">
+		<xsd:annotation>
+			<xsd:documentation xml:lang="en">
+				only the following group of HTML elements are allowed:
+				Paragraphs: &lt;p&gt;
+				All list elements: &lt;ul&gt;,&lt;ol&gt;,&lt;dl&gt;
+				Preformatted text: &lt;pre&gt;
+				Table: &lt;table&gt;
+				Image: &lt;img&gt;
+			</xsd:documentation>
+		</xsd:annotation>
 		<xsd:choice>
 			<xsd:element ref="xhtml:p"/>
 			<xsd:group ref="xhtml:lists"/>
 		</xsd:choice>	
-    <xsd:annotation>
-      <xsd:documentation xml:lang="en">
-        only the following group of HTML elements are allowed:
-          Paragraphs: &lt;p&gt;
-          All list elements: &lt;ul&gt;,&lt;ol&gt;,&lt;dl&gt;
-          Preformatted text: &lt;pre&gt;
-          Table: &lt;table&gt;
-          Image: &lt;img&gt;
-      </xsd:documentation>
-    </xsd:annotation>
 	</xsd:group>
 	
 	
