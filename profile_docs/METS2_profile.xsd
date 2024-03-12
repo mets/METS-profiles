@@ -1,67 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--  METS Profile Schema Version 2.1 -->
-<!-- 
-This document is available under the Creative Commons CC0 1.0 Universal Public Domain Dedication 
-(http://creativecommons.org/publicdomain/zero/1.0/). The Digital Library Federation, as creator of 
-this document, has waived all rights to it worldwide under copyright law, including all related and
-neighboring rights, to the extent allowed by law. For the full text see 
-http://creativecommons.org/publicdomain/zero/1.0/legalcode.
--->
-<!-- Prepared for the Digital Library Federation by the METS Editorial Board-->
-<!--
-	The METS Profile schema defines a document format for creating profiles of
-	a class of METS documents.  METS Profiles are intended to allow an individual
-	or organization to specify limitations and restrictions on the creation of METS
-	instance documents in order to define a document class.  METS instance 
-	documents which abide by those limitations and restrictions are said to conform to the profile.
-	
-	METS profiles may serve a variety of purposes, but their primary purpose is
-	to promote interoperability and exchange of METS documents.  By allowing
-	any given institution to specify and publicize its practices with regards to creation
-	and use of METS documents, it can assist others both in creating METS
-	instances to be submitted to that institution and in processing METS documents
-	created by that institution.
-	
-	Version 2 of the METS schema extends the provisions of version 1.  In particular, it provides much 
-	more extensive support for formatting documentation by means of xhtml elements which can be
-	used in the context of the textSection data type.  In addition, as a first step towards machine actionability,
-	the schema provides a means of specifying tests that can be applied to verify that specified requirements
-	have been met.  Additional enhancements over the version 1 profile schema are described in the
-	schema documentation.
-	
-	Version 2.1 (April 2018) added the Creative Commons CC0 1.0 license.  This version also added the xml:lang 
-	attribute to more elements to make it easier to create multi-lingual profiles.  These elements were affected:
-	
-	* The external_schema/name element is now repeatable and allows the xml:lang attribute
-	* The external_schema/context element now allows the xml:lang attribute
-	* The controlled_vocabularies/vocabulary/name element is now repeatable and allows the xml:lang attribute
-	* The controlled_vocabularies/vocabulary/context element now allows the xml:lang attribute	
-	* The tool/name element is now repeatable and allows the xml:lang attribute	
-	* The textSection/head complextype now allows the xml:lang attribute
-
-  Version 3.0 (January 2024 - DRAFT) updates the profile schema for use with the
-  METS schema version 2.
-
-  Changes to align with linking and external references in METS 2:
-  * allows any values for LOCTYPE and provides a link to suggested values
-  * removes the OTHERLOCTYPE attribute.
-  * removes the XLink schema and the xlink attributes for the testRef element
-  * adds LOCREF and LOCTYPE attributes for the testRef element
-
-  Changes to align with METS 2 elements:
-  * replaces amdSec, dmdSec elements with mdSec
-  * replaces structMap element with structSec,
-  * removes structLink and behaviorSec elements
-  * removes behavior_files element
-	
-	Institutions wishing to make their profiles widely available may wish to consider
-	formally registering them through the METS Editorial Board with the Library of Congress.
-	Instructions on registering a profile may be found at the METS website (http://www.loc.gov/mets/).
-
--->
-<xsd:schema targetNamespace="http://www.loc.gov/METS_Profile/v3" xmlns="http://www.loc.gov/METS_Profile/v3" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <!-- TODO: Change to METS2_Profile/vNNN ? -->
+<xsd:schema targetNamespace="http://www.loc.gov/METS_Profile/vNNN" xmlns="http://www.loc.gov/METS_Profile/vNNN" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<xsd:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>	
 	<xsd:import namespace="http://www.w3.org/1999/xhtml" schemaLocation="http://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd"/>
+
+  <xsd:annotation>
+    <xsd:documentation xml:lang="en">
+      METS 2 Profile Schema Version NNN
+
+      This document is available under the Creative Commons CC0 1.0 Universal Public Domain Dedication 
+      (http://creativecommons.org/publicdomain/zero/1.0/). The Digital Library Federation, as creator of 
+      this document, has waived all rights to it worldwide under copyright law, including all related and
+      neighboring rights, to the extent allowed by law. For the full text see 
+      http://creativecommons.org/publicdomain/zero/1.0/legalcode.
+
+      Prepared by the METS Editorial Board
+
+      Karin Bredenberg (Sydarkivera, Sweden)
+      Bertrand Caron (Bibliothèque nationale de France)
+      Aaron Elkiss (HathiTrust / University of Michigan)
+      Inge Hofsink (KB National Library of the Netherlands)
+      Juha Lehtonen (CSC – IT Center for Science, Finland)
+      Andreas Nef (Docuteam GmbH, Baden, Switzerland)
+      Tobias Steinke (German National Library)
+      Robin Wendler (Harvard University)
+
+      March, 2024
+      Version NNN
+    </xsd:documentation>
+    <xsd:documentation xml:lang="en">
+      The METS Profile schema defines a document format for creating profiles of
+      a class of METS documents.  METS Profiles are intended to allow an individual
+      or organization to specify limitations and restrictions on the creation of METS
+      instance documents in order to define a document class.  METS instance 
+      documents which abide by those limitations and restrictions are said to conform to the profile.
+      
+      METS profiles may serve a variety of purposes, but their primary purpose is
+      to promote interoperability and exchange of METS documents.  By allowing
+      any given institution to specify and publicize its practices with regards to creation
+      and use of METS documents, it can assist others both in creating METS
+      instances to be submitted to that institution and in processing METS documents
+      created by that institution.
+    </xsd:documentation>
+    <xsd:documentation xml:lang="en">
+      Change log
+
+      Version NNN (March 2024 - DRAFT) updates the profile schema for use with the
+      METS schema version 2.
+
+      Changes to align with linking and external references in METS 2:
+      * allows any values for LOCTYPE and provides a link to suggested values
+      * removes the OTHERLOCTYPE attribute.
+      * removes the XLink schema and the xlink attributes for the testRef element
+      * adds LOCREF and LOCTYPE attributes for the testRef element
+
+      Changes to align with METS 2 elements:
+      * replaces amdSec, dmdSec elements with mdSec
+      * replaces structMap element with structSec,
+      * removes structLink and behaviorSec elements
+      * removes behavior_files element
+      
+      Version 2.1 (April 2018) added the Creative Commons CC0 1.0 license.  This version also added the xml:lang 
+      attribute to more elements to make it easier to create multi-lingual profiles.  These elements were affected:
+      
+      * The external_schema/name element is now repeatable and allows the xml:lang attribute
+      * The external_schema/context element now allows the xml:lang attribute
+      * The controlled_vocabularies/vocabulary/name element is now repeatable and allows the xml:lang attribute
+      * The controlled_vocabularies/vocabulary/context element now allows the xml:lang attribute	
+      * The tool/name element is now repeatable and allows the xml:lang attribute	
+      * The textSection/head complextype now allows the xml:lang attribute
+
+      Version 2 of the METS profile schema extends the provisions of version 1.  In particular, it provides much 
+      more extensive support for formatting documentation by means of xhtml elements which can be
+      used in the context of the textSection data type.  In addition, as a first step towards machine actionability,
+      the schema provides a means of specifying tests that can be applied to verify that specified requirements
+      have been met.  Additional enhancements over the version 1 profile schema are described in the
+      schema documentation.
+    </xsd:documentation>
+    <xsd:documentation xml:lang="en">
+      Institutions wishing to make their profiles widely available may wish to consider
+      submitting them as public examples. Instructions for submitting a profile may be found
+      at https://github.com/METS/METS-profiles. This process replaces the formal registration
+      process used with earlier versions of METS profiles.
+    </xsd:documentation>
+  </xsd:annotation>
+  <!-- TODO: Should the root element change to METS2_Profile ? -->
 	<xsd:element name="METS_Profile">
 		<xsd:annotation>
 			<xsd:documentation xml:lang="en">Root element for a METS Profile</xsd:documentation>
@@ -70,7 +93,7 @@ http://creativecommons.org/publicdomain/zero/1.0/legalcode.
 			<xsd:sequence>
 				<xsd:element name="URI" maxOccurs="unbounded">
 					<xsd:annotation>
-						<xsd:documentation xml:lang="en">Every METS profile must be assigned a unique URI RFC 2396 by the institution responsible for its creation. This URI must have the attribute ASSIGNEDBY=&quot;local&quot;. If the profile is to be publicly registered at the Library of Congress Network and MARC Standards Office, the URI must not duplicate any URI assigned to any currently registered profile. A second URI element will be added if and when a profile is registered at the Library of Congress. This URI will have the attribute ASSIGNEDBY=&quot;metsboard&quot;. </xsd:documentation>
+						<xsd:documentation xml:lang="en">Every METS profile must be assigned a unique URI RFC 2396 by the institution responsible for its creation. This URI must have the attribute ASSIGNEDBY=&quot;local&quot;. </xsd:documentation>
 					</xsd:annotation>
 					<xsd:complexType>
 						<xsd:simpleContent>
@@ -199,19 +222,9 @@ http://creativecommons.org/publicdomain/zero/1.0/legalcode.
 						<xsd:attribute name="ROLE" type="xsd:string" use="optional"/>
 					</xsd:complexType>
 				</xsd:element>
-				<xsd:element name="registration_info" minOccurs="0">
-					<xsd:annotation>
-						<xsd:documentation xml:lang="en">A date when the profile was registered with the Library of Congress, and a URI for obtaining the registered profile from the Library (this will be provided by the registrars and need not be included in profiles being submitted); .</xsd:documentation>
-					</xsd:annotation>
-					<xsd:complexType>
-						<xsd:attribute name="ID" type="xsd:ID" use="optional"/>
-						<xsd:attribute name="regDate" type="xsd:dateTime" use="required"/>
-						<xsd:attribute name="regURI" type="xsd:anyURI" use="required"/>
-					</xsd:complexType>
-				</xsd:element>
 				<xsd:element name="related_profile" maxOccurs="unbounded">
 					<xsd:annotation>
-						<xsd:documentation xml:lang="en">A profile may indicate its relationship with other METS profiles. METS profiles are not explicitly versioned, as implementations may exist that use older editions of METS profiles. Therefore a new version of a profile must be registered as a new profile. In this case, the RELATIONSHIP attribute should be used to indicate that a profile supersedes a profile already registered with the Library of Congress Network Development and MARC Standards Office. For each related profile, the profile should specify a URI for the related profile and the nature of the relationship between the current profile and the related profile.</xsd:documentation>
+						<xsd:documentation xml:lang="en">A profile may indicate its relationship with other METS profiles. METS profiles are not explicitly versioned, as implementations may exist that use older editions of METS profiles. For each related profile, the profile should specify a URI for the related profile and the nature of the relationship between the current profile and the related profile.</xsd:documentation>
 					</xsd:annotation>
 					<xsd:complexType> 
 						<xsd:simpleContent>
@@ -268,7 +281,7 @@ extends -- profile builds on and extends an existing profile
 				</xsd:element>
 				<xsd:element name="external_schema" maxOccurs="unbounded">
 					<xsd:annotation>
-						<xsd:documentation xml:lang="en">A profile which will be registered with the Network Development and MARC Standards Office must identify all external schema which may be used in constructing a METS document conforming with the profile. external schema for registered profiles MUST be publicly available. The schema must be identified in sufficient detail to allow a document author previously unfamiliar with the schema to unambiguously identify and retrieve it. Those registering profiles with the Network Development and MARC Standards Office are strongly encouraged to include a URI for each identified external schema which may be used to retrieve that schema from any Internet workstation, and may wish to include the complete text of any required external schema as an appendix to their profile.  A single external_schema element should used for each external schema listed in the profile. Multiple external_schema elements may be used within a single profile. For each external schema described, you may provide a name of the schema, a URI assigned to the schema, a context description indicating where in a conforming METS document the schema may be used, and an additional note. The note element has an optional head subelement and some available text formatting elements from the xhtml namespace. Available xhtml elements include p, various list/item elements, text formatting such as b and i, a, and img.
+						<xsd:documentation xml:lang="en">A single external_schema element should used for each external schema listed in the profile. Multiple external_schema elements may be used within a single profile. For each external schema described, you may provide a name of the schema, a URI assigned to the schema, a context description indicating where in a conforming METS document the schema may be used, and an additional note. The note element has an optional head subelement and some available text formatting elements from the xhtml namespace. Available xhtml elements include p, various list/item elements, text formatting such as b and i, a, and img.
 						</xsd:documentation>
 					</xsd:annotation>
 					<xsd:complexType>
@@ -622,14 +635,6 @@ The Example element has two attributes:
 					</xsd:restriction>
 				</xsd:simpleType>
 			</xsd:attribute>
-			<xsd:attribute name="REGISTRATION" use="required">
-				<xsd:simpleType>
-					<xsd:restriction base="xsd:string">
-						<xsd:enumeration value="registered"/>
-						<xsd:enumeration value="unregistered"/>
-					</xsd:restriction>
-				</xsd:simpleType>				
-			</xsd:attribute>
 		</xsd:complexType>
 	</xsd:element>
 	
@@ -723,18 +728,21 @@ The requirement element has two children: description and tests. The required de
 		</xsd:sequence>
 	</xsd:complexType>
 	
-	<!-- only the following group of HTML elements are allowed:
-		Paragraphs: <p>
-		All list elements: <ul>,<ol>,<dl>
-		Preformatted text: <pre>
-		Table: <table>
-		Image: <img>
-	-->
 	<xsd:group name="xhtmlelements">
 		<xsd:choice>
 			<xsd:element ref="xhtml:p"/>
 			<xsd:group ref="xhtml:lists"/>
 		</xsd:choice>	
+    <xsd:annotation>
+      <xsd:documentation xml:lang="en">
+        only the following group of HTML elements are allowed:
+          Paragraphs: &lt;p&gt;
+          All list elements: &lt;ul&gt;,&lt;ol&gt;,&lt;dl&gt;
+          Preformatted text: &lt;pre&gt;
+          Table: &lt;table&gt;
+          Image: &lt;img&gt;
+      </xsd:documentation>
+    </xsd:annotation>
 	</xsd:group>
 	
 	
