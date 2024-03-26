@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
   <!-- TODO: Change to METS2_Profile/vNNN ? -->
-<xsd:schema targetNamespace="http://www.loc.gov/METS_Profile/vNNN" xmlns="http://www.loc.gov/METS_Profile/vNNN" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xsd:schema targetNamespace="http://www.loc.gov/METS2_Profile" xmlns="http://www.loc.gov/METS2_Profile" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<xsd:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>	
 	<xsd:import namespace="http://www.w3.org/1999/xhtml" schemaLocation="http://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd"/>
 
   <xsd:annotation>
     <xsd:documentation xml:lang="en">
-      METS 2 Profile Schema Version NNN
+      METS 2 Profile Schema (Draft, March 2024)
 
       This document is available under the Creative Commons CC0 1.0 Universal Public Domain Dedication 
       (http://creativecommons.org/publicdomain/zero/1.0/). The Digital Library Federation, as creator of 
@@ -25,11 +25,10 @@
       Tobias Steinke (German National Library)
       Robin Wendler (Harvard University)
 
-      March, 2024
-      Version NNN
+      DRAFT March, 2024
     </xsd:documentation>
     <xsd:documentation xml:lang="en">
-      The METS Profile schema defines a document format for creating profiles of
+      The METS 2 Profile schema defines a document format for creating profiles of
       a class of METS documents.  METS Profiles are intended to allow an individual
       or organization to specify limitations and restrictions on the creation of METS
       instance documents in order to define a document class.  METS instance 
@@ -45,8 +44,12 @@
     <xsd:documentation xml:lang="en">
       Change log
 
-      Version NNN (March 2024 - DRAFT) updates the profile schema for use with the
-      METS schema version 2.
+      March 2024 - DRAFT is a schema for use with METS 2, based on the the METS
+      Profile Schema
+      version 2.1
+      (https://www.loc.gov/standards/mets/profile_docs/mets.profile.v2-1.xsd)
+
+      Changes from the METS Profile Schema version 2.1:
 
       Changes to align with linking and external references in METS 2:
       * allows any values for LOCTYPE and provides a link to suggested values
@@ -60,22 +63,7 @@
       * removes structLink and behaviorSec elements
       * removes behavior_files element
       
-      Version 2.1 (April 2018) added the Creative Commons CC0 1.0 license.  This version also added the xml:lang 
-      attribute to more elements to make it easier to create multi-lingual profiles.  These elements were affected:
-      
-      * The external_schema/name element is now repeatable and allows the xml:lang attribute
-      * The external_schema/context element now allows the xml:lang attribute
-      * The controlled_vocabularies/vocabulary/name element is now repeatable and allows the xml:lang attribute
-      * The controlled_vocabularies/vocabulary/context element now allows the xml:lang attribute	
-      * The tool/name element is now repeatable and allows the xml:lang attribute	
-      * The textSection/head complextype now allows the xml:lang attribute
-
-      Version 2 of the METS profile schema extends the provisions of version 1.  In particular, it provides much 
-      more extensive support for formatting documentation by means of xhtml elements which can be
-      used in the context of the textSection data type.  In addition, as a first step towards machine actionability,
-      the schema provides a means of specifying tests that can be applied to verify that specified requirements
-      have been met.  Additional enhancements over the version 1 profile schema are described in the
-      schema documentation.
+      For changes prior to METS 2, refer to https://www.loc.gov/standards/mets/profile_docs/mets.profile.v2-1.xsd
     </xsd:documentation>
     <xsd:documentation xml:lang="en">
       Institutions wishing to make their profiles widely available may wish to consider
@@ -85,15 +73,15 @@
     </xsd:documentation>
   </xsd:annotation>
   <!-- TODO: Should the root element change to METS2_Profile ? -->
-	<xsd:element name="METS_Profile">
+	<xsd:element name="METS2_Profile">
 		<xsd:annotation>
-			<xsd:documentation xml:lang="en">Root element for a METS Profile</xsd:documentation>
+			<xsd:documentation xml:lang="en">Root element for a METS 2 Profile</xsd:documentation>
 		</xsd:annotation>
 		<xsd:complexType>
 			<xsd:sequence>
 				<xsd:element name="URI" maxOccurs="unbounded">
 					<xsd:annotation>
-						<xsd:documentation xml:lang="en">Every METS profile must be assigned a unique URI RFC 2396 by the institution responsible for its creation. This URI must have the attribute ASSIGNEDBY=&quot;local&quot;. </xsd:documentation>
+						<xsd:documentation xml:lang="en">Every METS 2 profile must be assigned a unique URI RFC 2396 by the institution responsible for its creation. This URI must have the attribute ASSIGNEDBY=&quot;local&quot;. </xsd:documentation>
 					</xsd:annotation>
 					<xsd:complexType>
 						<xsd:simpleContent>
@@ -614,7 +602,7 @@ The Example element has two attributes:
 				</xsd:element>		
 				<xsd:element name="Appendix" maxOccurs="unbounded">
 					<xsd:annotation>
-						<xsd:documentation xml:lang="en">A profile must contain an appendix containing an example METS document which conforms to the requirements set out in the profile. Profile authors should note that in order to insure that the completed profile document is valid, any namespace and schemaLocation declarations contained in the root &lt;mets&gt; element should be moved to the root &lt;METS_Profile&gt; element.</xsd:documentation>
+						<xsd:documentation xml:lang="en">A profile must contain an appendix containing an example METS document which conforms to the requirements set out in the profile. Profile authors should note that in order to insure that the completed profile document is valid, any namespace and schemaLocation declarations contained in the root &lt;mets&gt; element should be moved to the root &lt;METS2_Profile&gt; element.</xsd:documentation>
 					</xsd:annotation>
 					<xsd:complexType>
 						<xsd:sequence>
